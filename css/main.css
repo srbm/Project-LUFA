@@ -2,13 +2,13 @@
 /*Main Banner*/
 
 img {
-	text-align: center;
-		border-width: 3px;
+	float: center;
+	border-width: 3px;
 	border-color: blue;
 }
 
 /*Top Header*/
-h3 {
+.top-header {
 	font-size: 11;
 	font-family: fantasy;
 	color: black;
@@ -18,25 +18,23 @@ h3 {
 
 
 /* Navigation Styling */
-ul {
+li {
+	border-right: 1px solid white;
+}
+
+.navbar a {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
-}
-
-li {
-	float: left;
-	border-right: 1px solid white;
-}
-
-a {
 	display: block;
+	float: left;
 	padding: 12px 14px;;
 	text-align: center;
 	color: darkgrey;
 	text-decoration: none;
+	
 }
 
 li a:hover {
@@ -47,10 +45,24 @@ li a:hover {
 	background-color: white;
 }
 
-.email {
-	font-size: 8px;
+/* BLOG TITLE */
+
+.blog-title {
+	text-align: left;
+	float: left;
+	
 }
 
+/*FOOTER*/
+
+footer {
+	background-color: lightgrey;
+	display: inline-block;
+}
+
+.right-footer {
+	float: right;
+}
 
 
 
