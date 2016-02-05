@@ -1,5 +1,19 @@
 
-/*Main Banner*/
+/**********
+Top Header
+************/
+
+.top-header {
+	font-size: 1em;
+	font-family: fantasy;
+	color: slategrey;
+	background-color: whitesmoke;
+	text-align: left;
+}
+
+/***************
+Main Banner
+****************/
 
 .lufa-banner img {
 	max-width: 100%;
@@ -19,30 +33,26 @@
 ***********/
 
 
-/*Top Header*/
-.top-header {
-	font-size: 1em;
-	font-family: fantasy;
-	color: slategrey;
-	background-color: whitesmoke;
-	text-align: left;
+/***************
+Navigation
+****************/
+
+ul {
+	list-style: none;
+	text-decoration: none;
+	padding; 0;
+	margin: 0;
 }
-
-
-/* Navigation  */
-
+.nav-container {
+	max-width: 960px;
+}
 .navbar {
 	display: flex;
 	justify-content: space-around;
-	list-style-type: none;
 	background-color: #333;
 }
 
-ul.navbar li {
-}
-
-ul.navbar a {
-	
+.navbar a {
 	color: darkgrey;
 	text-decoration: none;
 	font-size: 1.3em;
@@ -50,7 +60,7 @@ ul.navbar a {
 	padding: 5px;
 }
 
-.navbar a:hover {
+.navbar li:hover {
 	background-color: white;
 }
 
@@ -58,14 +68,49 @@ ul.navbar a {
 	background-color: white;
 }
 
-/* BLOG TITLE */
+/***********
+	Navigation Dropdown
+
+		Problem: extra spcae to left on dropdown
+*********/
+
+.dropdown {
+	position: relative;
+}
+.dropdown:after {
+	content: "\25BC";
+	font-size: .5em;
+	color: darkgray;
+	display: block;
+	position: absolute;
+	top: 40%;
+	right: -8%;
+}
+
+.drop-nav {
+	position: absolute;
+	display: none;
+}
+.drop-nav li {
+	border-bottom: 1px solid white;
+}
+.dropdown:hover > .drop-nav {
+	background-color: black;
+	display: block;	
+}
+
+
+/*************
+BLOG TITLE 
+*************/
 
 .blog-title {
 	float: left;	
 }
 
-/*FOOTER*/
-
+/*************
+FOOTER
+**************/
 
 
 /******
@@ -73,7 +118,7 @@ ul.navbar a {
 *******/
 
 footer {
-	background-color: lightgrey;
+	background-color: whitesmoke;
 }
 
 .foot-nav ul {
