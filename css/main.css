@@ -1,3 +1,7 @@
+img {
+	max-width: 100%;
+}
+
 
 /**********
 Top Header
@@ -10,6 +14,8 @@ Top Header
 	background-color: whitesmoke;
 	text-align: left;
 }
+
+
 
 /***************
 Main Banner
@@ -70,8 +76,6 @@ ul {
 
 /***********
 	Navigation Dropdown
-
-		Problem: extra spcae to left on dropdown
 *********/
 
 .dropdown {
@@ -90,13 +94,15 @@ ul {
 .drop-nav {
 	position: absolute;
 	display: none;
+	padding: 0;
 }
 .drop-nav li {
 	border-bottom: 1px solid white;
 }
 .dropdown:hover > .drop-nav {
-	background-color: black;
-	display: block;	
+	background-color: #333;
+	display: block;
+	font-size: .85em;
 }
 
 
@@ -130,8 +136,10 @@ footer {
 .social-icon {
 	height: 20px;
 	width: 20px;
-	margin: 0px 5px;
+	margin: 0px 6px;
 }
+
+
 
 
 /*************
