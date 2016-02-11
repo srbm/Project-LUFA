@@ -1,0 +1,27 @@
+.leagues-links,
+.pickup-links,
+.club-links,
+.pro-links {
+	list-style: none;
+	text-decoration: none;
+	padding; 0;
+	margin: 0;
+	display: none;
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	border: 1px solid gold;
+	justify-content: center;
+}
+
+.play-type {
+	padding: 0;
+	margin: 3%;
+	width: 42%;	
+}
+
+.leagues {
+background-image: url(league-scale.png);
+}
