@@ -2,6 +2,15 @@ img {
 	max-width: 100%;
 }
 
+.the-body {
+	display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.the-main {
+	flex: 1;
+}
 
 /**********
 Top Header
@@ -120,14 +129,16 @@ FOOTER
 
 
 /******
-	Need to make sticky 
+	Need to make stickyz: check/done
 *******/
 
 footer {
 	background-color: whitesmoke;
+	padding: 15px 0px;
+	margin: 0;
 }
 
-.foot-nav ul {
+.foot-li {
 	display: flex;
 	list-style: none;
 	justify-content: center;
