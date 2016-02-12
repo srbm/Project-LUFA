@@ -2,26 +2,56 @@
 .pickup-links,
 .club-links,
 .pro-links {
+	display: none;
 	list-style: none;
 	text-decoration: none;
 	padding; 0;
 	margin: 0;
-	display: none;
 }
 
 .wrapper {
 	display: flex;
 	flex-wrap: wrap;
-	border: 1px solid gold;
-	justify-content: center;
+	height: 100vh;
+	align-content: center;
+	max-width: 960px;
+	border: 1px solid mistyrose;
 }
 
 .play-type {
+	display: flex;
 	padding: 0;
-	margin: 3%;
-	width: 42%;	
+	margin: 1% 2.5%;
+	width: 45%;	
+	height: 46%;
+	background-size: 100% 100%;
+	justify-content: center;
+	
 }
 
 .leagues {
-background-image: url(league-scale.png);
+	background-image: url(league-scale.png);
+	background-repeat: no-repeat;
+	color: lightblue;
+	align-items: ;
+}
+
+.pickup {
+	background-image: url(pickup.jpg);
+	background-repeat: no-repeat;
+	color: lightblue;
+	align-items: center;
+}
+
+.club-teams {
+	background-image: url(club-teams.jpg);
+	background-repeat: no-repeat;
+	color: white;
+	align-items: baseline;
+}
+
+.pro-teams {
+	background-image: url(revolution-team.jpg);
+	background-repeat: no-repeat;
+	color: lightblue;
 }
