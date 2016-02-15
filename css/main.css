@@ -6,6 +6,7 @@ img {
 	display: flex;
   min-height: 100vh;
   flex-direction: column;
+	justify-content: center;
 }
 
 .the-main {
@@ -100,6 +101,7 @@ Navigation
 }
 
 .drop-nav {
+	list-style: none;
 	position: absolute;
 	display: none;
 	padding: 0;
