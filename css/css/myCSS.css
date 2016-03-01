@@ -1,0 +1,9 @@
+.leagues-inside {
+	padding-top: 59.75%;
+}
+
+.leagues {
+	background-image: url(../league-scale.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
