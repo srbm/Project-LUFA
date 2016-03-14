@@ -8,59 +8,26 @@
 	//Hide ul links
 $(".links").hide();
 	
-	//add button title
-$(".leagues").append('<button class="btn btn-primary btn-block">Leagues</button>');
-$(".pickup").append('<button class="btn btn-primary btn-block">Pickup</button>');
-$(".club-teams").append('<button class="btn btn-primary btn-block">Club Teams</button>');
-$(".pro-teams").append('<button class="btn btn-primary btn-block">Pro Teams</button>');
+//reset all to button covers
 
-//reset all to buttons
-
-$('*').not("button").click(function () {
+  $('html').click(function () {
 	$(".links").hide();
 	$("button").show();
 });
-
-
-
 
 
 //Capture click event
-$("button:contains('Leagues')").click(function () {
+$("button.menu").click(function (event) {
+	event.stopPropagation();
 	//Reveal link options
 	$(".links").hide();
-	$(".league-links").show();
+	$(this).siblings("ul").show();
 	//Hide buton
 	$("button").show();
 	$(this).hide();
 });
 
-$("button:contains('Pickup')").click(function () {
-	//Reveal link options
-	$(".links").hide();
-	$(".pickup-links").show();
-	//Hide buton
-	$("button").show();
-	$(this).hide();
-});
 
-$("button:contains('Club')").click(function () {
-	//Reveal link options
-	$(".links").hide();
-	$(".club-links").show();
-	//Hide buton
-	$("button").show();
-	$(this).hide();
-});
-
-$("button:contains('Pro Teams')").click(function () {
-	//Reveal link options
-	$(".links").hide();
-	$(".pro-links").show();
-	//Hide buton
-	$("button").show();
-	$(this).hide();
-});
 
 
 
