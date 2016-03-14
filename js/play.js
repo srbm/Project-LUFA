@@ -1,3 +1,6 @@
+
+	
+
 //Problem: Create interactivity on main page to fulfill main JS requirment for project
 //Solution: Hover or click events trigger modal displaying options with links to go to change modal 
 
@@ -6,10 +9,21 @@
 $(".links").hide();
 	
 	//add button title
-$(".leagues").append("<button>Leagues</button>");
-$(".pickup").append("<button>Pickup</button>");
-$(".club-teams").append("<button>Club Teams</button>");
-$(".pro-teams").append("<button>Pro Teams</button>");
+$(".leagues").append('<button class="btn btn-primary btn-block">Leagues</button>');
+$(".pickup").append('<button class="btn btn-primary btn-block">Pickup</button>');
+$(".club-teams").append('<button class="btn btn-primary btn-block">Club Teams</button>');
+$(".pro-teams").append('<button class="btn btn-primary btn-block">Pro Teams</button>');
+
+//reset all to buttons
+
+$('*').not("button").click(function () {
+	$(".links").hide();
+	$("button").show();
+});
+
+
+
+
 
 //Capture click event
 $("button:contains('Leagues')").click(function () {
@@ -25,7 +39,6 @@ $("button:contains('Pickup')").click(function () {
 	//Reveal link options
 	$(".links").hide();
 	$(".pickup-links").show();
-	$().show();
 	//Hide buton
 	$("button").show();
 	$(this).hide();
@@ -50,8 +63,8 @@ $("button:contains('Pro Teams')").click(function () {
 });
 
 
-//Display specific modal according to the choice clicked with more options to click on
 
+//Display specific modal according to the choice clicked with more options to click on
 //Capture click/tap event on an option
 
 //change modal to the option tapped/clicked

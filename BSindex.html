@@ -10,7 +10,7 @@
 
     <!-- Bootstrap -->
     <link href="css/css/bootstrap.min.css" rel="stylesheet">
-		<!--<link rel="stylesheet" type="text/css" href="css/css/myCSS.css"> -->
+		<link rel="stylesheet" type="text/css" href="css/css/myCSS.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,88 +67,385 @@
 			<div class="play-type container">
 				<div class="row">
 					<div class="col-sm-3 leagues">
-
-						<ul class="links league-links ">
-							<li>Spring</li>
-							<li>Summer</li>
-							<li>Fall</li>
-							<li>Winter</li>
-						</ul>
 						
+						<!-- BUTTONS! -->
+
+						<ul class="links league-links list-unstyled">
+							<li><button type="button" class="btn btn-success btn-block center-block" data-toggle="modal" data-target="#springModal">Spring</button></li>
+							<li><button type="button" class="btn btn-danger btn-block center-block" data-toggle="modal" data-target="#summerModal">Summer</button></li>
+							<li><button type="button" class="btn btn-warning btn-block center-block" data-toggle="modal" data-target="#fallModal">Fall</button></li>
+							<li><button type="button" class="btn btn-info btn-block center-block" data-toggle="modal" data-target="#winterModal">Winter</button></li>
+						</ul>
+					</div>
+
+					
+						<!-- MODAL! -->
+						
+						<!-- SPRING! -->
+				<div class="modal fade" id="springModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Spring League</h4>
+							</div>
+							<div class="modal-body">
+								<p>Played at Seneca Park near the softball fields, Spring League usually runs from mid-March to June. This year we are experimenting with a two league system. A draft league for players with experience and a league for beginners that are new to the game or want to work on their skills.</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/Louisville-Ultimate-Frisbee-Association-728289137270769/" target="_blank">More Details Here!</a>
+							</div>
+						</div>
+					</div>
 				</div>
-				
+					
+					
+					<!-- MODAL! -->
+						
+						<!-- SUMMER! -->
+					<div class="modal fade" id="summerModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Summer League</h4>
+							</div>
+							<div class="modal-body">
+								<p>Played at Champions Park on River Rd, Summer League usually runs from June through August. It is our most popular league of the year with a wide range of playing level. This makes Summer League the most fun and has the most spirit.  Get your cheers ready!</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/Louisville-Ultimate-Frisbee-Association-728289137270769/" target="_blank">More Details Here!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					<!-- MODAL! -->
+						
+						<!-- FALL! -->
+					
+					<div class="modal fade" id="fallModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Fall League</h4>
+							</div>
+							<div class="modal-body">
+								<p>Played at Champions Park on River Rd, Fall League is usually played in September and October. With the clube season winding down it is a relaxed place to work a little more on your skills and spirit before the cold hits. </p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/Louisville-Ultimate-Frisbee-Association-728289137270769/" target="_blank">More Details Here!</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			
+					
+					<!-- MODAL! -->
+						
+						<!-- WINTER! -->
+					
+					<div class="modal fade" id="winterModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Winter League</h4>
+							</div>
+							<div class="modal-body">
+								<p>Winter forces us indoors here in Kentucky but we make good use of unused gyms and provide you with two sessions to keep those throws sharp.  Venues change yearly so check in with us in November</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/Louisville-Ultimate-Frisbee-Association-728289137270769/" target="_blank">More Details Here!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
 
 			<!-- Pickup -->
+					<!-- BUTTONS -->
 
+					
+					
+					
 				<div class="play-type">
 					<div class="col-sm-3 pickup">
 
-						<ul class="links pickup-links">
-							<li>Waterfront</li>
-							<li>Summer Pickup</li>
-							<li>Area Pickup</li>
+						<ul class="links pickup-links list-unstyled">
+							<li><button type="button" class="btn btn-info btn-block center-block" data-toggle="modal" data-target="#waterfrontModal">Waterfront</button></li>
+							
+							<li><button type="button" class="btn btn-danger btn-block center-block" data-toggle="modal" data-target="#summerPickupModal">Summer Pickup</button></li>
+							
+							<li><button type="button" class="btn btn-warning btn-block center-block" data-toggle="modal" data-target="#areaModal">Area Pickup</button></li>
 						</ul>
-						
 					</div>
 				</div>
-
+					
+					<!-- MODAL! -->
+						
+						<!-- WATERFRONT! -->
+					
+					
+					<div class="modal fade" id="waterfrontModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Waterfront Pickup</h4>
+							</div>
+							<div class="modal-body">
+								<p>Meeting every Monday and Thursday at 730, this is Louisville's most consistent pickup game. Very laid back group that will only give you a work out if you want it. No stall. No calls. Everyone welcome if you can adhere to their "style".</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/Louisville-Ultimate-Frisbee-Association-728289137270769/" target="_blank">More Details Here!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					
+					
+					<!-- MODAL! -->
+						
+						<!-- SUMMER PICKUP! -->
+					
+					<div class="modal fade" id="summerPickupModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Summer Pickup</h4>
+							</div>
+							<div class="modal-body">
+								<p>This Facebook groups throws together games on a regular basis but also changes days/times/places often. This game is more organized but still good natured. Everyone welcome</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/groups/summerfrisbee/" target="_blank">Facebook Group</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					<!-- MODAL! -->
+						
+						<!-- AREA PICKUP! -->
+					
+					<div class="modal fade" id="areaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Area Pickup</h4>
+							</div>
+							<div class="modal-body">
+								<p>For those traveling to Frankfort for work FUPU has been playing every Wednesday for the last 5 years at Capitol View Park starting at 530. They also play Sunday afternoon at 1PM. Very rarely weather will force a cancelization or relocation. Updates posted on their Facebook page. This group is super friendly and laid back. All are welcome.</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/groups/102789743090379/" target="_blank">Facebook Group</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+			
 					<!-- Club Teams -->
 
 			<div class="play-type">
 				<div class="col-sm-3 club-teams">
-
-					<ul class="links club-links">
-						<li>Kentucky Flying Circus</li>
-						<li>Fifth Element</li>
-						<li>University of Louisville</li>
-					</ul>
 					
+						<!-- BUTTONS -->
+
+					<ul class="links club-links list-unstyled">
+							<li><button type="button" class="btn btn-warning btn-block center-block" data-toggle="modal" data-target="#kfcModal">Kentucky Flying Circus</button></li>
+							<li><button type="button" class="btn btn-info btn-block center-block" data-toggle="modal" data-target="#feModal">Fifth Element</button></li>
+							<li><button type="button" class="btn btn-danger btn-block center-block" data-toggle="modal" data-target="#ulModal">University of Louisville</button></li>
+						</ul>
 				</div>
 			</div>
-			
+					
+					<!-- MODAL! -->
+						
+						<!-- KFC! -->
 
+					<div class="modal fade" id="kfcModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Kentucky Flying Circus</h4>
+							</div>
+							<div class="modal-body">
+								<p>KFC is an open division team that made regionals in 2015. Tryouts typically in spring.</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/kentuckyflyingcircus/?fref=nf" target="_blank">Facebook Page!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					<!-- MODAL! -->
+						
+						<!-- FIFTH ELEMENT! -->
+					
+					<div class="modal fade" id="feModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Fifth Element</h4>
+							</div>
+							<div class="modal-body">
+								<p>In their first season as a team the mixed division club, Fifth Element, qualified for regionals. </p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/groups/704218569655199/" target="_blank">Facebook Page!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					
+					<!-- MODAL! -->
+						
+						<!-- UNIVERSITY OF LOUISVILLE! -->
+					
+					<div class="modal fade" id="ulModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">University of Louisville</h4>
+							</div>
+							<div class="modal-body">
+								<p>Seasons run in the fall and winter with college championships in the spring.  Many of the organizers of LUFA also coach and run UofL. </p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="https://www.facebook.com/groups/1406854102861123/" target="_blank">Facebook Page!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					
+					
+					
 				<!-- Pro Teams -->
-
+					<!--BUTTONS!-->
 			<div class="play-type">
 
 					<div class="col-sm-3 pro-teams">
 
 
-						<ul class="links pro-links">
-							<li>Cincinati Revolution</li>
-							<li>Indianapolis Alleycats</li>
-							<li>Nashville Nightwatch</li>
+						<ul class="links pro-links list-unstyled">
+							<li><button type="button" class="btn btn-success btn-block center-block" data-toggle="modal" data-target="#revModal">Revoution</button></li>
+							
+							<li><button type="button" class="btn btn-default btn-block center-block" data-toggle="modal" data-target="#acModal">AlleyCats</button></li>
+							
+							<li><button type="button" class="btn btn-danger btn-block center-block" data-toggle="modal" data-target="#nwModal">Night Watch</button></li>
 						</ul>
 						
 					</div>
 				</div>
-			
-		</div>
-			
+					
+					<!-- REVOLUTION -->
+					<!--MODAL!-->
+					
+					<div class="modal fade" id="revModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel"> Cincinnati Revolution</h4>
+							</div>
+							<div class="modal-body">
+								<p>Plays in the AUDL Midwest Conference. The 2016 campaign kicks off on Saturday April 2nd.</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="http://cincinnatirevolution.com/" target="_blank">Team Website!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					<!-- ALLEYCATS -->
+					<!--MODAL!-->
+					
+					<div class="modal fade" id="acModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Indianapolis Alley Cats</h4>
+							</div>
+							<div class="modal-body">
+								<p>Plays in the AUDL Midwest Conference. The 2016 campaign kicks off on Saturday April 2nd.</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="http://www.myalleycats.com/" target="_blank">Team Website!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+					
+					<!-- NIGHTWATCH -->
+					<!--MODAL!-->
+					
+					<div class="modal fade" id="nwModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Nashville Nightwatch</h4>
+							</div>
+							<div class="modal-body">
+								<p>PLays in the AUDL South Conference. The 2016 campaign kicks off on Saturday April 2nd.</p>
+							</div>
+							<div class="modal-footer">
+								<a class="btn btn-primary" href="http://www.nashvillenightwatch.com/" target="_blank">Team Website!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+					
+		
+			</div>
 		</div>
 		
 		
 		<!--END PLAY -->
 		
 		<!-- FOOTER -->
+		
+		<br>
+		<br>
+		<br>
 			
 			<div class="container">
 				<div class="row">
-					<div class="col-md-4">
+					
 						<ul class="foot-li">
-							<li><span class="glyphicon glyphicon-copyright-mark"></span>LUFA 2016</li>
+							<div class="col-md-3">
+								<li><span class="glyphicon glyphicon-copyright-mark"></span>LUFA 2016</li>
+							</div>
+							<div class="col-md-3">
 							<li><a href="mailto:louisvilleultimate@gmail.com" target="_blank">
 								<span class="glyphicon glyphicon-envelope"></span></a>
-							</li>
-							<li><a href="https://www.facebook.com/groups/LouisvilleUltimate/" target="_blank">
+								</li></div>
+								<div class="col-md-3">
+							<li><a href=https://www.facebook.com/Louisville-Ultimate-Frisbee-Association-728289137270769/?fref=nf target="_blank">
 								<img src="img/facebook-wrap.png" alt="facebook logo" class="social-icon"></a>
-							</li>
+									</li></div>
+							<div class="col-md-3">
 							<li><a href="https://twitter.com/Louisville_Ulti" target="_blank">
 								<img src="img/twitter-wrap.png" alt="twitter logo" class="social-icon"></a>
 							</li>
+							</div>
 						</ul>
-					</div>
+					
 				</div>
 			</div>
 		
