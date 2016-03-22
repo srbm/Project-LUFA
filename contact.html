@@ -19,34 +19,25 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 		
-<!--		<script> 
-			var xhr = XMLHttpRequest();
-			xhr.onreadystatechange = function() {
-				
-			};
-			xhr.open('POST', 'https://us13.api.mailchimp.com/3.0/lists/04bcfb4910')
-			function() {
-				xhr.send();
-				document.getElementById('submit').style.display='none';
-			} 
-			
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script src="js/ang.js" type="text/javascript"></script>
 		
-		</script>  -->
+		
   </head>
 	
 	<!-- Navigation Buttons -->
 	
-  <body>
+  <body ng-app="formApp">
 		<div class="container">
 			<div class="row">
 				
 				<div class="col-md-9">
-					<h3 class="">Ultimate Leagues, Tournaments, and Outreach in Louisville, Kentucky</h3>
+					<h4 class="hidden-xs">Ultimate Leagues, Tournaments, and Outreach in Louisville, Kentucky</h4>
 				</div>
 				
 				<div class="col-md-3 pull-right">
-					<a class="btn btn-default" role="button" href="about.html">About</a>
-					<a class="btn btn-default disabled" role="button" href="contact.html">Contact</a>
+					<a class="btn btn-default btn-group" role="button" href="about.html">About</a>
+					<a class="btn btn-default btn-group disabled" role="button" href="contact.html">Contact</a>
 				</div>
 				
 			</div>
@@ -61,56 +52,70 @@
 		<div class="container">
 			<div class="row">
 				
-					<!-- Facebook API -->
-				
-				
 						<!-- Email us! -->
-			<div class="col-sm-6">
-				<form>
-					<h3>Sign up for our email list!</h3>
-					
-					<!-- Angular implmented here; Use form to capture data and store in an array? -->
+				<div class="col-sm-6">
+					<form ng-controller="formCtrl" id="myForm">
+						<h3>Email us!</h3>
+
+						<!-- Angular implmented here; Use form to capture data and store in an array -->
 
 
-					<label>Name:</label>
-					<input type="text" class="form-control" placeholder="Jane Doe" id="person">
+						<label>Name:</label>
+						<input type="text" ng-model="form.name" class="form-control" placeholder="Jane Doe" id="person">
 
-					<label>Email:</label>
-					<input type="text" class="form-control" placeholder="jane.doe@example.com" id="personEmail">
+						<label>Email:</label>
+						<input type="email" ng-model="form.email" class="form-control" placeholder="jane.doe@example.com" id="personEmail">
 
-					
-					<br>
-					<button class="btn btn-default" id="submit" onclick="sendAJAX">Submit</button>
-				</form>
-			</div>
+						<label>Message:</label>
+						<input type="text" ng-model="form.comments" class="form-control" placeholder="Tell us how LUFA is doing!" id="comments">
+
+						<br>
+						<div>
+							<button class="btn btn-default" id="submit" ng-click="saveForm(form)">Submit</button>
+						</div>
+					</form>
+				</div>
 				
-		
-		
-		
 		
 		
 		<!-- Twitter API -->
 		
 				
-					<div class="col-6-sm">
+				<div class="col-6-sm">
+					<a class="twitter-timeline" href="https://twitter.com/LouUlt" data-widget-id="706993597586001921">Tweets by @LouUlt</a>
 
-						<a class="twitter-timeline" href="https://twitter.com/LouUlt" data-widget-id="706993597586001921">Tweets by @LouUlt</a>
-
-						<script>
-							!function(d,s,id)
-							{var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-						</script>
-
-
-		
-						
-					</div>
+					<script>
+						!function(d,s,id)
+						{var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+					</script>
+				</div>
 		</div>
 	</div>
+		
+		<!-- FOOTER -->
+		
+					
+			<div class="container">
+				<div class="text-center">
+					<ul class="foot-li list-inline list-unstyled">
+
+						<li><a href="mailto:louisvilleultimate@gmail.com" target="_blank">
+							<img src="img/Message-25.png" alt="envelope"></a></li>
+
+						<li>
+							<a href=https://www.facebook.com/Louisville-Ultimate-Frisbee-Association-728289137270769/?fref=nf target="_blank">
+							<img src="img/Facebook-25.png" alt="facebook logo" class="social-icon"></a>
+						</li>
+
+						<li><a href="https://twitter.com/Louisville_Ulti" target="_blank">
+							<img src="img/Twitter-25.png" alt="twitter logo" class="social-icon"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
 		
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/play.js" type="text/javascript"></script>
   </body>
 </html>
